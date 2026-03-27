@@ -174,10 +174,13 @@ footer a {
 <nav>
     <div class="logo">EG Maintenance</div>
     <div>
-        <a href="file:///C:/.vis/EGMAboutPage.html">Home</a>
-        <a href="file:///C:/.vis/EGMNonProfit.html">Community Efforts</a>
-        <a href="file:///C:/.vis/EGMProducts.html">Products</a>
-        <a href="file:///C:/.vis/EGMContact.html">Contact</a>
+        <nav>
+  <a href="EGMHomePage">Home</a>
+  <a href="EGMNonProfit">Nonprofit</a>
+  <a href="EGMSolution">Solutions</a>
+  <a href="Contact">Contact</a>
+</nav>
+
     </div>
 </nav>
 
