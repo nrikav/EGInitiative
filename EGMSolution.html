@@ -1,0 +1,521 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+      <title>EGM — Landscaping</title>
+
+        <meta name="description" content="Professional Home services — design, installation, maintenance. Contact for a free estimate." />
+
+<style>
+
+  :root{
+
+    --accent:#2b8a3e;
+
+      --accent-2:#7bd389;
+
+        --muted:#556;
+
+          --bg:#f7fff7;
+
+           --card:#ffffff;
+
+              --radius:12px;
+
+                --shadow:0 8px 24px rgba(20,30,40,0.08);
+
+                   font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Helvetica Neue";
+
+ }
+
+   *{box-sizing:border-box}
+
+    body{margin:0;background:var(--bg);color:#123;line-height:1.5}
+
+       .wrap{max-width:1100px;margin:28px auto;padding:20px}
+
+         header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+
+           .brand{display:flex;align-items:center;gap:12px}
+
+             .logo{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:20px;box-shadow:var(--shadow)}
+
+               nav a{margin-left:12px;color:var(--muted);text-decoration:none;font-weight:700}
+
+                 .hero{display:grid;grid-template-columns:1fr 360px;gap:22px;align-items:start;margin-top:18px}
+
+                    .card{background:var(--card);padding:20px;border-radius:var(--radius);box-shadow:var(--shadow)}
+
+                      h1{margin:0 0 8px;font-size:28px;color:var(--accent)}
+
+                        p.lead{margin:0 0 14px;color:var(--muted)}
+
+                         .cta{display:flex;gap:10px;flex-wrap:wrap}
+
+                           .btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:800;display:inline-block}
+
+                             .btn.alt{background:transparent;border:2px solid var(--accent);color:var(--accent);font-weight:800}
+
+                                                      /* Photos: exactly 3 parts */
+
+ .photos{display:grid;grid-template-columns:1fr;gap:12px;margin-top:12px}
+
+  .photo-row{display:flex;gap:12px}
+
+    .photo{flex:1;height:160px;border-radius:10px;overflow:hidden;background:#eee;cursor:pointer;display:flex;align-items:center;justify-content:center}
+
+     .photo img{width:100%;height:100%;object-fit:cover;display:block}
+
+                                              /* About and contact */
+
+.about h2,.contact h2{margin-top:0}
+
+  .contact .field{margin-bottom:10px}
+
+    label{display:block;font-weight:700;margin-bottom:6px;color:#234}
+
+      input[type="text"], input[type="email"], textarea{width:100%;padding:10px;border-radius:10px;border:1px solid #e6efe6;background:#fbfffb}
+
+       textarea{resize:vertical}
+
+          footer{margin-top:26px;padding:18px;border-radius:10px;background:linear-gradient(180deg,#fff,#f7fff7);display:flex;justify-content:space-between;align-items:center;box-shadow:var(--shadow)}
+
+            .contact-links a{display:inline-block;margin-left:12px;color:var(--accent);text-decoration:none;font-weight:800}
+
+             .lightbox{position:fixed;inset:0;background:rgba(0,0,0,0.7);display:none;align-items:center;justify-content:center;padding:20px;z-index:60}
+
+               .lightbox img{max-width:95%;max-height:90%;border-radius:10px;box-shadow:0 12px 40px rgba(0,0,0,0.6)}
+
+                 .close{position:absolute;top:18px;right:18px;color:#fff;font-size:22px;cursor:pointer}
+
+ @media(max-width:900px){
+
+    .hero{grid-template-columns:1fr}
+
+}
+
+</style>
+
+    </head>
+
+        <body>
+
+         <div class="wrap">
+
+           <header>
+
+              <div class="brand">
+
+                <div class="logo" id="EGM">EGM</div>
+
+                      <div>
+
+                       <div id="bizName" style="font-weight:900">EG</div>
+
+                         <div style="font-size:13px;color:var(--muted)" id="bizTag">Landscape design • Installation • Maintenance</div>
+
+                            </div>
+
+                              </div>
+
+ <nav>
+
+    <a href="#about">About</a>
+
+       <a href="#photos">Photos</a>
+
+          <a href="#contact">Contact</a>
+
+            </nav>
+
+              </header>
+
+<section class="hero">
+
+   <main class="card">
+
+<h1 id="heroHeadline">GET IT FIXED</h1>
+
+   <p class="lead" id="heroSub">Local home repairs in Salem, OR — design, installation, seasonal care, and reliable maintenance. Free on-site estimates available.</p>
+    
+      <div class="cta" style="margin-bottom:12px">
+
+        <a class="btn" href="const2.html">EG'S Environmental Initiative</a>
+
+           <a class="btn alt" id="callBtn" href="tel:+15098641322">Call: (509) 864-1322</a>
+
+             </div>
+
+ <h2 style="margin:12px 0 8px" id="photosHeading">Solutions</h2>
+
+    <div id="photos" class="photos" aria-label="Project photos">
+
+      <div class="aa">
+
+        <div class="photo"><img src="images/front-yard.jpg" alt="Front yard transformation"></div>
+
+         <div class="photo"><img src="images/patio.jpg" alt="Patio installation"></div>
+
+            </div>
+
+              <div class="photo-row">
+
+                <div class="photo"><img src="images/backyard.jpg" alt="Backyard landscape and lawn"></div>
+
+                 </div>
+
+                    </div>
+
+                        <section id="about" class="about" style="margin-top:14px">
+
+      <h2>About the company</h2>
+
+      <p id="aboutText" style="color:var(--muted);margin-top:6px">
+
+        <strong id="aboutName">EG Maintenance</strong>: An employee-operated landscaping company serving Salem and nearby communities. We focus on thoughtful design, durable installations, and seasonal care.
+
+      </p>
+
+      <ul style="padding-left:18px;color:var(--muted);margin:8px 0 0">
+
+        <li><strong>Services:</strong> Design, planting, hardscapes, irrigation, and lawn care.</li>
+
+        <li><strong>Status:</strong> Licensed & insured</li>
+
+      </ul>
+
+    </section>
+
+  </main>
+
+</section>
+
+<h2 style="margin:12px 0 8px" id="photosHeading">Solutions</h2>
+
+<div id="photos" class="photos" aria-label="Project portfolio">
+
+  <div class="aa" style="display: flex; gap: 10px; margin-bottom: 10px;">
+
+    <div class="photo">
+
+      <img src="1000003400.png" alt="Front yard landscaping with manicured lawn and autumn trees" style="width: 100%; border-radius: 8px;">
+
+    </div>
+
+    <div class="photo">
+
+      <img src="1000003076.jpg" alt="Stone patio with curved retaining wall and rock garden" style="width: 100%; border-radius: 8px;">
+
+    </div>
+
+  </div>
+
+  <div class="photo-row">
+
+    <div class="photo">
+
+      <img src="1000003401.png" alt="Backyard landscape with stone path and water feature" style="width: 100%; border-radius: 8px;">
+
+    </div>
+
+  </div>
+
+</div>
+
+      <aside class="card" id="contact" aria-labelledby="contactHeading">
+
+        <h2 id="contactHeading">Contact & Request</h2>
+
+        <p style="color:var(--muted);margin-top:6px">Fill the form or use the quick links. Replace the email and phone below with your own.</p>
+
+        <div style="margin-top:10px" class="contact-quick">
+
+          <div style="display:flex;gap:8px;margin-bottom:8px">
+
+            <a class="btn" id="emailBtn" href="mailto:your-email@example.com?subject=Estimate%20Request">EGlandmaintenance@gmail.com</a>
+        
+          </div>
+
+        </div>
+
+        <form id="contactForm" onsubmit="openMail(event)" style="margin-top:8px">
+
+          <div class="field">
+
+            <label for="name">your name</label>
+
+            <input id="name" type="text" placeholder="First and last" required />
+
+          </div>
+
+          <div class="field">
+
+            <label for="email">Your email</label>
+
+            <input id="email" type="email" placeholder="you@example.com" required />
+
+          </div>
+
+          <div class="field">
+
+            <label for="phone">Phone (optional)</label>
+
+            <input id="phone" type="text" placeholder="+1-555-555-5555" />
+
+          </div>
+
+          <div class="field">
+
+            <label for="message">Project details</label>
+
+            <textarea id="message" rows="4" placeholder="Tell us about your yard, goals, and timeline" required></textarea>
+
+          </div>
+
+          <button class="btn" type="submit" style="width:100%;margin-top:6px">Send Request</button>
+
+        </form>
+
+        <div style="margin-top:12px;color:var(--muted);font-size:13px">
+
+          <strong>Service area:</strong> <span id="serviceArea">Salem, OR and surrounding communities</span>
+
+        </div>
+
+      </aside>
+
+    </section>
+
+    <footer class="card" style="margin-top:18px">
+
+      <div>
+
+        <strong id="footerBiz">EG Maintenance</strong>
+
+        <div style="color:var(--muted);font-size:13px" id="footerTag">Landscape design • Installation • Maintenance</div>
+
+      </div>
+
+      <div class="contact-links">
+
+        <a id="footerEmail" href="mailto:EGlandmaintenance@gmail.com">EGlandmaintenance@gmail.com</a>
+
+        <a id="footerPhone" href="tel:(509)864-1322">(509)864-1322</a>
+
+      </div>
+
+    </footer>
+
+           </div>
+
+                                                     <!-- Lightbox for photos -->
+
+              <div class="lightbox" id="lightbox" role="dialog" aria-hidden="true">
+
+                 <div class="close" id="lbClose" aria-label="Close">✕</div>
+
+                    <img id="lbImg" src="" alt="Large project photo" />
+
+                       </div>
+
+                         <script>
+
+                                  /* ====== Quick settings: edit these values to update site text and links ======
+
+                                 Change businessName, email, phone, address, and image paths below.
+                                 */
+ const settings = {
+
+   businessName: "EG Maintenance",
+
+      tagline: "Landscape design • Installation • Maintenance",
+
+         heroHeadline: "Beautiful yards, cared for by people who care about results",
+
+            heroSub: "Local landscaping in Salem, OR — design, installation, seasonal care, and reliable maintenance. Free on-site estimates available.",
+
+              email: "EGlandmaintenance@gmail.com",
+
+                phone: "(509)864-1322",
+
+                 serviceArea: "Salem, OR and surrounding communities",
+
+                   aboutText: "EG Maintenance is an emplyee-operated landscaping company serving Salem and nearby communities. We focus on thoughtful design, durable installations, and seasonal care that keeps your yard healthy and beautiful.",
+
+                                            // Photo file paths: replace with your own images (three parts total)
+
+ photos: [
+
+   {thumb: "images/front-yard.jpg", full: "images/front-yard.jpg", alt: "Front yard transformation"},
+
+     {thumb: "images/patio.jpg", full: "images/patio.jpg", alt: "Patio and planting"},
+
+       {thumb: "images/backyard.jpg", full: "images/backyard.jpg", alt: "Backyard landscape and lawn"}
+
+          ]
+
+           };
+
+                                             // Apply settings to page (easy single place to update)
+
+ document.getElementById('bizName').textContent = settings.businessName;
+
+    document.getElementById('logoInitials').textContent = settings.businessName.split(' ').map(s=>s[0]).slice(0,2).join('').toUpperCase();
+
+     document.getElementById('bizTag').textContent = settings.tagline;
+
+       document.getElementById('heroHeadline').textContent = settings.heroHeadline;
+
+          document.getElementById('heroSub').textContent = settings.heroSub;
+
+            document.getElementById('aboutName').textContent = settings.businessName;
+
+             document.getElementById('aboutText').textContent = settings.aboutText;
+
+               document.getElementById('serviceArea').textContent = settings.serviceArea;
+
+                 document.getElementById('footerBiz').textContent = settings.businessName;
+
+                    document.getElementById('footerTag').textContent = settings.tagline;
+
+                                                    // Update contact links
+
+ const mailto = `mailto:${encodeURIComponent(settings.email)}?subject=${encodeURIComponent('Estimate Request')}`;
+
+    document.getElementById('emailBtn').href = mailto;
+
+     document.getElementById('footerEmail').href = `mailto:${settings.email}`;
+
+       document.getElementById('footerEmail').textContent = settings.email;
+
+         document.getElementById('phoneBtn').href = `tel:${settings.phone}`;
+
+           document.getElementById('footerPhone').href = `tel:${settings.phone}`;
+
+              document.getElementById('footerPhone').textContent = settings.phone;
+
+               document.getElementById('callBtn').href = `tel:${settings.phone}`;
+
+                 (function populatePhotos(){
+                    const container = document.getElementById('photos');
+
+                      container.innerHTML = '';
+
+                         const row1 = document.createElement('div'); row1.className = 'photo-row';
+
+                         const row2 = document.createElement('div'); row2.className = 'photo-row';
+
+                           const p = settings.photos;
+
+                              for(let i=0;i<3;i++){
+
+                               const photo = document.createElement('div');
+
+                                  photo.className = 'photo';
+
+                                    photo.dataset.full = p[i]?.full || '';
+
+                                      const img = document.createElement('img');
+
+                                       img.src = p[i]?.thumb || '';
+
+                                          img.alt = p[i]?.alt || `Project photo ${i+1}`;
+
+                                            photo.appendChild(img);
+
+                                             if(i < 2) row1.appendChild(photo); else row2.appendChild(photo);
+
+                                               }
+
+                                                 container.appendChild(row1);
+
+                                                    container.appendChild(row2);
+
+                                                                   // attach click handlers for lightbox
+
+ container.querySelectorAll('.photo').forEach(ph=>{
+
+   ph.addEventListener('click', ()=> {
+
+     const src = ph.dataset.full || ph.querySelector('img').src;
+
+        document.getElementById('lbImg').src = src;
+
+          const lb = document.getElementById('lightbox');
+
+            lb.style.display = 'flex';
+
+             lb.setAttribute('aria-hidden','false');
+
+               });
+
+                  });
+
+                    })();
+
+                                                                      // Lightbox close
+
+ document.getElementById('lbClose').addEventListener('click', ()=> {
+
+   const lb = document.getElementById('lightbox');
+
+      lb.style.display = 'none';
+
+       lb.setAttribute('aria-hidden','true');
+
+          });
+
+            document.getElementById('lightbox').addEventListener('click', (e)=>{
+
+              if(e.target.id === 'lightbox') {
+
+                e.currentTarget.style.display = 'none';
+
+                  e.currentTarget.setAttribute('aria-hidden','true');
+
+                   }
+
+                      });
+
+                                                // Contact form: opens user's mail client with prefilled content
+
+ function openMail(ev){
+
+   ev.preventDefault();
+
+      const name = document.getElementById('name').value || '';
+
+        const email = document.getElementById('email').value || '';
+
+          const phone = document.getElementById('phone').value || '';
+
+            const message = document.getElementById('message').value || '';
+
+              const subject = encodeURIComponent('Estimate Request from website: ' + (name || email));
+
+               const body = encodeURIComponent(
+
+                 'Name: ' + name + '\n' +
+
+                   'Email: ' + email + '\n' +
+
+                     'Phone: ' + phone + '\n\n' +
+
+                        'Project details:\n' + message
+
+                          );
+
+                           window.location.href = `mailto:${settings.email}?subject=${subject}&body=${body}`;
+
+                              }
+
+                                window.openMail = openMail;
+
+                             </script>
+
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EG Maintenance - Home</title>
+      <link rel="stylesheet" href="css/style.css">
+</head>
+<style>/* ============================
+                                                                    EG Maintenance - Shared Styles
+   Forest + Suburban Theme
+   ============================ */
+
+   .call-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #2e5d3f; /* EGM forest green */
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.call-btn:hover {
+  background-color: #244a32;
+}
+
+.text-link {
+  display: block;
+  margin-top: 8px;
+  color: #1f3b2c;
+  text-decoration: underline;
+  font-size: 0.9em;
+}
+
+#photo-strip {
+     width: 100%;
+        padding: 20px 0;
+            display: flex;
+             justify-content: center;
+}
+.photo-row {
+    display: flex;
+        gap: 15px;
+            justify-content: center;
+             flex-wrap: wrap;
+}
+.photo-row img {
+    width: 180px;      /* small–medium size */
+     height: 140px;
+         object-fit: cover;
+          border-radius: 8px;
+               box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+
+
+:root {
+ --forest-green: #2e4d34;
+    --suburban-light: #f4f4f2;
+        --suburban-dark: #d9d9d6;
+         --accent-shadow: rgba(0,0,0,0.15);
+             --text-dark: #1e1e1e;
+                 --text-light: #ffffff;
+}
+
+body {
+ margin: 0;
+     font-family: Arial, sans-serif;
+         background: var(--suburban-light);
+              color: var(--text-dark);
+}
+
+                                                                            /* NAVIGATION */
+nav {
+    background: var(--forest-green);
+     padding: 15px 30px;
+         display: flex;
+              justify-content: space-between;
+                  align-items: center;
+                     box-shadow: 0 3px 8px var(--accent-shadow);
+}
+
+nav a {
+    color: var(--text-light);
+        text-decoration: none;
+    margin-left: 20px;
+         font-weight: bold;
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
+
+                                                                                  /* HERO */
+.hero {
+    background: linear-gradient(
+        rgba(46, 77, 52, 0.7),
+         rgba(46, 77, 52, 0.7)
+    ),
+url('PLACEHOLDER-HERO-IMAGE.jpg');
+    background-size: cover;
+     background-position: center;
+         padding: 120px 40px;
+             text-align: center;
+                   color: var(--text-light);
+}
+
+.hero h1 {
+    font-size: 48px;
+     margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+     margin-bottom: 20px;
+}
+
+.hero button {
+    padding: 12px 25px;
+     background: var(--suburban-dark);
+         border: none;
+             font-size: 18px;
+                    cursor: pointer;
+                     border-radius: 6px;
+                         box-shadow: 0 3px 6px var(--accent-shadow);
+}
+
+.hero button:hover {
+    background: var(--suburban-light);
+}
+
+                                                                                            /* SECTIONS */
+.section {
+    padding: 60px 40px;
+}
+
+.section h2 {
+    color: var(--forest-green);
+     margin-bottom: 20px;
+}
+
+                                                                                            /* SERVICES GRID */
+.services-grid {
+    display: grid;
+     grid-template-columns: repeat(4, 1fr);
+         gap: 25px;
+}
+
+.service-box {
+    background: white;
+        padding: 25px;
+            border-radius: 8px;
+                box-shadow: 0 3px 6px var(--accent-shadow);
+}
+
+                                                                                                        /* FOOTER */
+footer {
+    background: var(--forest-green);
+      color: var(--text-light);
+         padding: 30px;
+             text-align: center;
+                 margin-top: 40px;
+}
+
+footer a {
+    color: var(--suburban-dark);
+        text-decoration: none;
+            font-weight: bold;
+}
+</style>
+<body>
+
+<nav>
+    <div class="logo">EG Maintenance</div>
+    <div>
+        <a href="file:///C:/.vis/EGMAboutPage.html">Home</a>
+        <a href="file:///C:/.vis/EGMNonProfit.html">Community Efforts</a>
+        <a href="file:///C:/.vis/EGMProducts.html">Products</a>
+        <a href="file:///C:/.vis/EGMContact.html">Contact</a>
+    </div>
+</nav>
+
+<div class="hero">
+    <section id="photo-strip">
+    <div class="photo-row">
+        <img src="https://copilot.microsoft.com/th/id/BCO.10309600-a988-45a4-bf27-f075843916df.png" alt="Project Photo 1">
+         <img src="https://copilot.microsoft.com/th/id/BCO.ae225140-1f94-4b56-a301-1160b53a1f7a.png" alt="Project Photo 2">
+             <img src="https://copilot.microsoft.com/th/id/BCO.2a4bb143-99fa-4b61-9768-eeabc300e28c.png" alt="Project Photo 3">
+    </div>
+</section>
+    <h1>Convenient Maintenance at Your Disposal</h1>
+    <p>Landscaping, construction, seasonal repair, and full property care — made simple.</p>
+
+    <a href="tel:5098641322" class="call-btn">Call</a>
+    <a href="mailto:eglandmaintanance@gmail.com" 
+   class="call-btn">Email</a>
+
+
+</div>
+
+<div class="section">
+    <h2>Our Services</h2>
+
+    <div class="services-grid">
+        <div class="service-box">
+            <h3>Home Care</h3>
+            <p>EG Maintenance keeps your home running smoothly with fast, reliable cleaning, repairs, and seasonal upkeep. Simple, convenient, and built to save you time.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>Land Care</h3>
+            <p>We keep your outdoor space sharp year‑round with professional mowing, trimming, and cleanup. Consistent, clean results that boost curb appeal.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>Site Maintenance</h3>
+            <p>Protect your property with proactive inspections, repairs, and ongoing upkeep. Efficient, dependable service that prevents problems before they start.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>Construction Development</h3>
+            <p>Upgrade your property with clean, efficient construction improvements delivered by a professional team. Strong results, simple process, zero stress.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 EG - Maintenance</p>
+    <p>
+        <a href="file:///C:/.vis/EGMNonProfit.html">Support Our Nonprofit Partner</a> |
+        <a href="file:///C:/.vis/EGMProducts.html">Visit Our Store</a>
+    </p>
+</footer>
+
+</body>
+</html>
