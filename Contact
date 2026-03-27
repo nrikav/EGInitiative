@@ -175,11 +175,13 @@ footer a {
     <div>
         <div>
        <nav>
-  <a href="about.html">About</a>
-  <a href="products.html">Products</a>
-  <a href="environment.html">Environment</a>
-  <a href="contact.html">Contact</a>
-  <a href="gallery.html">Gallery</a>
+ <nav>
+  <a href="EGMHomePage">Home</a>
+  <a href="EGMNonProfit">Nonprofit</a>
+  <a href="EGMSolution">Solutions</a>
+  <a href="Contact">Contact</a>
+</nav>
+
 </nav>
 
     </div>
